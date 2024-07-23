@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.img-cart{
+    width: 300px;
+    height: 300px;
+}
+
+.cta-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.header-title{
+    font-weight: 300;
+    font-size: 64px;
+    margin-bottom: 1rem;
+}
