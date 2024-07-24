@@ -1,0 +1,8 @@
+.product-list-container{
+    display: flex;
+}
+.product-list-header{
+    font-weight: 400;
+    font-size: 34px;
+    margin: 1.5rem 2rem;
+}

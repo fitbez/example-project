@@ -2,21 +2,16 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import Hero from "./components/Hero/hero";
 import Nav from "./components/Nav/Nav";
+import ProductList from "./components/ProductList/ProductList";
+import { data, dataTwo } from "./data";
 
 function App() {
-  const handleButtonOne = () => {
-    console.log("button one has been clicked");
-  };
-  const handleButtonTwo = () => {
-    console.log("button two has been clicked");
-  };
-  const handleButtonThree = () => {
-    console.log("button three has been clicked");
-  };
+  const productData = data;
   return (
     <>
       <Nav />
       <Hero />
+      <ProductList productData={productData} />
     </>
   );
 }
