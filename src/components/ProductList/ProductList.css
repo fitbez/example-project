@@ -1,5 +1,6 @@
 .product-list-container{
     display: flex;
+    flex-wrap: wrap;
 }
 .product-list-header{
     font-weight: 400;

@@ -1,13 +1,17 @@
 import "./ProductListItem.css";
 
 function ProductListItem(props) {
-  return props.productData.map((product) => {
+  return props.productData.map((product, index) => {
     return (
-      <div key={product.id} className="card">
+      <div key={index} className="card">
         <img src={product.image} alt="" className="product-img" />
         <div className="product-content">
-          <h3 className="product-name">{product.name}</h3>
-          <p className="product-description">{product.description}</p>
+          <p className="product-name">
+            <strong>{product.title.slice(0, 30)}</strong>
+          </p>
+          <p className="product-description">
+            {product.description.slice(0, 30)}
+          </p>
           <p className="product-price">
             <strong>${product.price}</strong>
           </p>
